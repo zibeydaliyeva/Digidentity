@@ -65,7 +65,7 @@ class CatalogListViewModel {
             }
             self.isFetchingData = false
         }
-        
+
     }
     
     func getCatalog(at index: Int) -> CatalogCellViewModel? {
