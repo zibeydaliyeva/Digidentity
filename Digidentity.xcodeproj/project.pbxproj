@@ -34,6 +34,7 @@
 		4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */; };
 		4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */; };
 		4CAA2B302747E4EB006D0DDA /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */; };
+		4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B312747E541006D0DDA /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
 		4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		4CAA2B312747E541006D0DDA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +301,7 @@
 		4C389EB22747C11100F026B3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B312747E541006D0DDA /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
 				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
 				4CAA2B1A2747D761006D0DDA /* Cacher.swift in Sources */,
+				4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */,
 				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
 				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */,
