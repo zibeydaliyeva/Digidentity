@@ -20,7 +20,6 @@ struct AES256 {
         case badInputVectorLength
     }
     
-    
     init(key: Data, iv: Data) throws {
         guard key.count == kCCKeySizeAES256 else {
             throw Error.badKeyLength
@@ -31,7 +30,6 @@ struct AES256 {
         self.key = key
         self.iv = iv
     }
-
 
     func encrypt(_ digest: Data) throws -> Data {
         return try crypt(input: digest, operation: CCOperation(kCCEncrypt))
@@ -119,6 +117,5 @@ struct AES256 {
         let arr: [UInt8] = [2,0,2,2,0,0,1,1,0,0,1,1,0,0,1,1]
         return Data(arr)
     }
-    
     
 }
