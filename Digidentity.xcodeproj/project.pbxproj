@@ -43,6 +43,7 @@
 		4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */; };
 		4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */; };
 		4CAA2B4C2747EB5A006D0DDA /* CatalogListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */; };
+		4CAA2B4E2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
 		4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTest.swift; sourceTree = "<group>"; };
 		4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewControllerTest.swift; sourceTree = "<group>"; };
+		4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */,
+				4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
+				4CAA2B4E2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift in Sources */,
 				4CAA2B1C2747D852006D0DDA /* CacherTest.swift in Sources */,
 				4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */,
 				4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */,
