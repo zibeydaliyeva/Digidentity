@@ -12,6 +12,38 @@
 		4C389E812747BFC800F026B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C389E7F2747BFC800F026B3 /* LaunchScreen.storyboard */; };
 		4C389E962747BFC900F026B3 /* DigidentityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C389E952747BFC900F026B3 /* DigidentityUITests.swift */; };
 		4C389E982747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C389E972747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift */; };
+		4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */; };
+		4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2AFF2747CAFB006D0DDA /* Enums.swift */; };
+		4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B012747CB23006D0DDA /* Extensions.swift */; };
+		4CAA2B042747CB74006D0DDA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B032747CB74006D0DDA /* Router.swift */; };
+		4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */; };
+		4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */; };
+		4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */; };
+		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
+		4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0F2747CDBE006D0DDA /* APIService.swift */; };
+		4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */; };
+		4CAA2B142747D101006D0DDA /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B132747D101006D0DDA /* AES256.swift */; };
+		4CAA2B162747D11A006D0DDA /* CryptorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */; };
+		4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */; };
+		4CAA2B1A2747D761006D0DDA /* Cacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B192747D761006D0DDA /* Cacher.swift */; };
+		4CAA2B1C2747D852006D0DDA /* CacherTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B1B2747D852006D0DDA /* CacherTest.swift */; };
+		4CAA2B1E2747D9A4006D0DDA /* CatalogListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B1D2747D9A4006D0DDA /* CatalogListViewModel.swift */; };
+		4CAA2B202747D9DD006D0DDA /* CatalogCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B1F2747D9DD006D0DDA /* CatalogCellViewModel.swift */; };
+		4CAA2B222747DB87006D0DDA /* CatalogListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B212747DB87006D0DDA /* CatalogListViewModelTest.swift */; };
+		4CAA2B242747DBA8006D0DDA /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CAA2B232747DBA8006D0DDA /* Items.json */; };
+		4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */; };
+		4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */; };
+		4CAA2B302747E4EB006D0DDA /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */; };
+		4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B312747E541006D0DDA /* BaseViewController.swift */; };
+		4CAA2B372747E65E006D0DDA /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B362747E65E006D0DDA /* CatalogCell.swift */; };
+		4CAA2B392747E690006D0DDA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B382747E690006D0DDA /* LoadingCell.swift */; };
+		4CAA2B3C2747E70A006D0DDA /* CatalogCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */; };
+		4CAA2B3F2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */; };
+		4CAA2B422747E80A006D0DDA /* CatalogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */; };
+		4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */; };
+		4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */; };
+		4CAA2B4C2747EB5A006D0DDA /* CatalogListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */; };
+		4CAA2B4E2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +73,38 @@
 		4C389E912747BFC800F026B3 /* DigidentityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigidentityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C389E952747BFC900F026B3 /* DigidentityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigidentityUITests.swift; sourceTree = "<group>"; };
 		4C389E972747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigidentityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		4CAA2AFF2747CAFB006D0DDA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4CAA2B012747CB23006D0DDA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CAA2B032747CB74006D0DDA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItem.swift; sourceTree = "<group>"; };
+		4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogParams.swift; sourceTree = "<group>"; };
+		4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
+		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4CAA2B0F2747CDBE006D0DDA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
+		4CAA2B132747D101006D0DDA /* AES256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
+		4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorHelper.swift; sourceTree = "<group>"; };
+		4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorHelperTest.swift; sourceTree = "<group>"; };
+		4CAA2B192747D761006D0DDA /* Cacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cacher.swift; sourceTree = "<group>"; };
+		4CAA2B1B2747D852006D0DDA /* CacherTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacherTest.swift; sourceTree = "<group>"; };
+		4CAA2B1D2747D9A4006D0DDA /* CatalogListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewModel.swift; sourceTree = "<group>"; };
+		4CAA2B1F2747D9DD006D0DDA /* CatalogCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCellViewModel.swift; sourceTree = "<group>"; };
+		4CAA2B212747DB87006D0DDA /* CatalogListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewModelTest.swift; sourceTree = "<group>"; };
+		4CAA2B232747DBA8006D0DDA /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
+		4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		4CAA2B312747E541006D0DDA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4CAA2B362747E65E006D0DDA /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		4CAA2B382747E690006D0DDA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionView.swift; sourceTree = "<group>"; };
+		4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewController.swift; sourceTree = "<group>"; };
+		4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
+		4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTest.swift; sourceTree = "<group>"; };
+		4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewControllerTest.swift; sourceTree = "<group>"; };
+		4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +189,8 @@
 		4C389EA42747C01700F026B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */,
+				4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +198,8 @@
 		4C389EA52747C02000F026B3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B1D2747D9A4006D0DDA /* CatalogListViewModel.swift */,
+				4CAA2B1F2747D9DD006D0DDA /* CatalogCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,6 +228,10 @@
 		4C389EA82747C04700F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B032747CB74006D0DDA /* Router.swift */,
+				4CAA2B0F2747CDBE006D0DDA /* APIService.swift */,
+				4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */,
+				4CAA2B192747D761006D0DDA /* Cacher.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -177,6 +249,8 @@
 		4C389EAA2747C07E00F026B3 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B132747D101006D0DDA /* AES256.swift */,
+				4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -184,6 +258,10 @@
 		4C389EAB2747C08700F026B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B012747CB23006D0DDA /* Extensions.swift */,
+				4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */,
+				4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */,
+				4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +269,7 @@
 		4C389EAC2747C09000F026B3 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2AFF2747CAFB006D0DDA /* Enums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -198,6 +277,7 @@
 		4C389EAD2747C0A800F026B3 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B232747DBA8006D0DDA /* Items.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -205,6 +285,7 @@
 		4C389EAE2747C0B000F026B3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B212747DB87006D0DDA /* CatalogListViewModelTest.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -212,6 +293,9 @@
 		4C389EAF2747C0BC00F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */,
+				4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */,
+				4CAA2B1B2747D852006D0DDA /* CacherTest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +303,9 @@
 		4C389EB02747C0C900F026B3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */,
+				4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */,
+				4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -226,6 +313,8 @@
 		4C389EB12747C0D400F026B3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */,
+				4CAA2B4D2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -233,6 +322,7 @@
 		4C389EB22747C11100F026B3 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B312747E541006D0DDA /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -248,6 +338,10 @@
 		4C389EB42747C12C00F026B3 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B332747E60F006D0DDA /* Cells */,
+				4CAA2B3A2747E6FB006D0DDA /* CustomViews */,
+				4CAA2B3D2747E788006D0DDA /* Protocols */,
+				4CAA2B402747E7C9006D0DDA /* Controller */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -255,8 +349,42 @@
 		4C389EB52747C13700F026B3 /* Catalog Detail */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */,
 			);
 			path = "Catalog Detail";
+			sourceTree = "<group>";
+		};
+		4CAA2B332747E60F006D0DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B362747E65E006D0DDA /* CatalogCell.swift */,
+				4CAA2B382747E690006D0DDA /* LoadingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CAA2B3A2747E6FB006D0DDA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4CAA2B3D2747E788006D0DDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4CAA2B402747E7C9006D0DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,6 +458,7 @@
 					};
 					4C389E862747BFC800F026B3 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4C389E702747BFC700F026B3;
 					};
 					4C389E902747BFC800F026B3 = {
@@ -372,6 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B242747DBA8006D0DDA /* Items.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +519,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B1E2747D9A4006D0DDA /* CatalogListViewModel.swift in Sources */,
+				4CAA2B142747D101006D0DDA /* AES256.swift in Sources */,
+				4CAA2B162747D11A006D0DDA /* CryptorHelper.swift in Sources */,
+				4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */,
+				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
+				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
+				4CAA2B3F2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift in Sources */,
+				4CAA2B1A2747D761006D0DDA /* Cacher.swift in Sources */,
+				4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */,
+				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
+				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
+				4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */,
+				4CAA2B422747E80A006D0DDA /* CatalogListViewController.swift in Sources */,
+				4CAA2B302747E4EB006D0DDA /* Extension+UIImageView.swift in Sources */,
+				4CAA2B3C2747E70A006D0DDA /* CatalogCollectionView.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
+				4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */,
+				4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */,
+				4CAA2B372747E65E006D0DDA /* CatalogCell.swift in Sources */,
+				4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */,
+				4CAA2B202747D9DD006D0DDA /* CatalogCellViewModel.swift in Sources */,
+				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
+				4CAA2B392747E690006D0DDA /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +549,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
+				4CAA2B4E2747EC72006D0DDA /* CatalogDetailViewControllerTest.swift in Sources */,
+				4CAA2B1C2747D852006D0DDA /* CacherTest.swift in Sources */,
+				4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */,
+				4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */,
+				4CAA2B4C2747EB5A006D0DDA /* CatalogListViewControllerTest.swift in Sources */,
+				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
+				4CAA2B222747DB87006D0DDA /* CatalogListViewModelTest.swift in Sources */,
+				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +774,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
@@ -627,6 +789,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.DigidentityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digidentity.app/Digidentity";
@@ -638,6 +801,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
