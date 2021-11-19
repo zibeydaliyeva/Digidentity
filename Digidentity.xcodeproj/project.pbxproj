@@ -35,6 +35,12 @@
 		4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */; };
 		4CAA2B302747E4EB006D0DDA /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */; };
 		4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B312747E541006D0DDA /* BaseViewController.swift */; };
+		4CAA2B372747E65E006D0DDA /* CatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B362747E65E006D0DDA /* CatalogCell.swift */; };
+		4CAA2B392747E690006D0DDA /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B382747E690006D0DDA /* LoadingCell.swift */; };
+		4CAA2B3C2747E70A006D0DDA /* CatalogCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */; };
+		4CAA2B3F2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */; };
+		4CAA2B422747E80A006D0DDA /* CatalogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */; };
+		4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +93,12 @@
 		4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		4CAA2B2F2747E4EB006D0DDA /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
 		4CAA2B312747E541006D0DDA /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4CAA2B362747E65E006D0DDA /* CatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCell.swift; sourceTree = "<group>"; };
+		4CAA2B382747E690006D0DDA /* LoadingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionView.swift; sourceTree = "<group>"; };
+		4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewController.swift; sourceTree = "<group>"; };
+		4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +329,10 @@
 		4C389EB42747C12C00F026B3 /* Catalog */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B332747E60F006D0DDA /* Cells */,
+				4CAA2B3A2747E6FB006D0DDA /* CustomViews */,
+				4CAA2B3D2747E788006D0DDA /* Protocols */,
+				4CAA2B402747E7C9006D0DDA /* Controller */,
 			);
 			path = Catalog;
 			sourceTree = "<group>";
@@ -324,8 +340,42 @@
 		4C389EB52747C13700F026B3 /* Catalog Detail */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */,
 			);
 			path = "Catalog Detail";
+			sourceTree = "<group>";
+		};
+		4CAA2B332747E60F006D0DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B362747E65E006D0DDA /* CatalogCell.swift */,
+				4CAA2B382747E690006D0DDA /* LoadingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4CAA2B3A2747E6FB006D0DDA /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B3B2747E70A006D0DDA /* CatalogCollectionView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4CAA2B3D2747E788006D0DDA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4CAA2B402747E7C9006D0DDA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,17 +516,23 @@
 				4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */,
 				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
 				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
+				4CAA2B3F2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift in Sources */,
 				4CAA2B1A2747D761006D0DDA /* Cacher.swift in Sources */,
 				4CAA2B322747E541006D0DDA /* BaseViewController.swift in Sources */,
 				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
 				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */,
+				4CAA2B422747E80A006D0DDA /* CatalogListViewController.swift in Sources */,
 				4CAA2B302747E4EB006D0DDA /* Extension+UIImageView.swift in Sources */,
+				4CAA2B3C2747E70A006D0DDA /* CatalogCollectionView.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
 				4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */,
 				4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */,
+				4CAA2B372747E65E006D0DDA /* CatalogCell.swift in Sources */,
+				4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */,
 				4CAA2B202747D9DD006D0DDA /* CatalogCellViewModel.swift in Sources */,
 				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
+				4CAA2B392747E690006D0DDA /* LoadingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
