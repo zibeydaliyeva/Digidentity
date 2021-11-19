@@ -41,6 +41,8 @@
 		4CAA2B3F2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */; };
 		4CAA2B422747E80A006D0DDA /* CatalogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */; };
 		4CAA2B442747E878006D0DDA /* CatalogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */; };
+		4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */; };
+		4CAA2B4C2747EB5A006D0DDA /* CatalogListViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		4CAA2B3E2747E7AC006D0DDA /* CatalogCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		4CAA2B412747E80A006D0DDA /* CatalogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewController.swift; sourceTree = "<group>"; };
 		4CAA2B432747E878006D0DDA /* CatalogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogDetailViewController.swift; sourceTree = "<group>"; };
+		4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTest.swift; sourceTree = "<group>"; };
+		4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +303,7 @@
 			children = (
 				4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */,
 				4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */,
+				4CAA2B492747EB34006D0DDA /* ExtensionsTest.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 		4C389EB12747C0D400F026B3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B4B2747EB5A006D0DDA /* CatalogListViewControllerTest.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -542,7 +548,9 @@
 			files = (
 				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
 				4CAA2B1C2747D852006D0DDA /* CacherTest.swift in Sources */,
+				4CAA2B4A2747EB34006D0DDA /* ExtensionsTest.swift in Sources */,
 				4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */,
+				4CAA2B4C2747EB5A006D0DDA /* CatalogListViewControllerTest.swift in Sources */,
 				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
 				4CAA2B222747DB87006D0DDA /* CatalogListViewModelTest.swift in Sources */,
 				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
