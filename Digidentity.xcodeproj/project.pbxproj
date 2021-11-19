@@ -12,6 +12,16 @@
 		4C389E812747BFC800F026B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C389E7F2747BFC800F026B3 /* LaunchScreen.storyboard */; };
 		4C389E962747BFC900F026B3 /* DigidentityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C389E952747BFC900F026B3 /* DigidentityUITests.swift */; };
 		4C389E982747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C389E972747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift */; };
+		4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */; };
+		4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2AFF2747CAFB006D0DDA /* Enums.swift */; };
+		4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B012747CB23006D0DDA /* Extensions.swift */; };
+		4CAA2B042747CB74006D0DDA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B032747CB74006D0DDA /* Router.swift */; };
+		4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */; };
+		4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */; };
+		4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */; };
+		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
+		4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0F2747CDBE006D0DDA /* APIService.swift */; };
+		4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +51,16 @@
 		4C389E912747BFC800F026B3 /* DigidentityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigidentityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C389E952747BFC900F026B3 /* DigidentityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigidentityUITests.swift; sourceTree = "<group>"; };
 		4C389E972747BFC900F026B3 /* DigidentityUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigidentityUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		4CAA2AFF2747CAFB006D0DDA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		4CAA2B012747CB23006D0DDA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4CAA2B032747CB74006D0DDA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItem.swift; sourceTree = "<group>"; };
+		4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogParams.swift; sourceTree = "<group>"; };
+		4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
+		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4CAA2B0F2747CDBE006D0DDA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +145,8 @@
 		4C389EA42747C01700F026B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */,
+				4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -160,6 +182,9 @@
 		4C389EA82747C04700F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B032747CB74006D0DDA /* Router.swift */,
+				4CAA2B0F2747CDBE006D0DDA /* APIService.swift */,
+				4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -184,6 +209,7 @@
 		4C389EAB2747C08700F026B3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B012747CB23006D0DDA /* Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -191,6 +217,7 @@
 		4C389EAC2747C09000F026B3 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2AFF2747CAFB006D0DDA /* Enums.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -212,6 +239,8 @@
 		4C389EAF2747C0BC00F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */,
+				4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -219,6 +248,7 @@
 		4C389EB02747C0C900F026B3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -330,6 +360,7 @@
 					};
 					4C389E862747BFC800F026B3 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4C389E702747BFC700F026B3;
 					};
 					4C389E902747BFC800F026B3 = {
@@ -389,7 +420,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */,
+				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
+				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
+				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
+				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
+				4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */,
+				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +435,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
+				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
+				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +654,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
@@ -627,6 +669,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.DigidentityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digidentity.app/Digidentity";
@@ -638,6 +681,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
