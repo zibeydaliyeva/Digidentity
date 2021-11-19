@@ -20,6 +20,7 @@
 		4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */; };
 		4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */; };
 		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
+		4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0F2747CDBE006D0DDA /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogParams.swift; sourceTree = "<group>"; };
 		4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
+		4CAA2B0F2747CDBE006D0DDA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +180,9 @@
 		4C389EA82747C04700F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */,
 				4CAA2B032747CB74006D0DDA /* Router.swift */,
+				4CAA2B0F2747CDBE006D0DDA /* APIService.swift */,
+				4CAA2AFD2747CA53006D0DDA /* ErrorService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
 				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
+				4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */,
 				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
