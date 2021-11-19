@@ -22,6 +22,9 @@
 		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
 		4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0F2747CDBE006D0DDA /* APIService.swift */; };
 		4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */; };
+		4CAA2B142747D101006D0DDA /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B132747D101006D0DDA /* AES256.swift */; };
+		4CAA2B162747D11A006D0DDA /* CryptorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */; };
+		4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		4CAA2B0F2747CDBE006D0DDA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
+		4CAA2B132747D101006D0DDA /* AES256.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
+		4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorHelper.swift; sourceTree = "<group>"; };
+		4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptorHelperTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +208,8 @@
 		4C389EAA2747C07E00F026B3 /* Crypto */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B132747D101006D0DDA /* AES256.swift */,
+				4CAA2B152747D11A006D0DDA /* CryptorHelper.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */,
+				4CAA2B172747D193006D0DDA /* CryptorHelperTest.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -420,6 +429,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B142747D101006D0DDA /* AES256.swift in Sources */,
+				4CAA2B162747D11A006D0DDA /* CryptorHelper.swift in Sources */,
 				4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */,
 				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
 				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
@@ -436,6 +447,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
+				4CAA2B182747D193006D0DDA /* CryptorHelperTest.swift in Sources */,
 				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
 				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
 			);
