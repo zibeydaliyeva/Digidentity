@@ -32,6 +32,7 @@
 		4CAA2B222747DB87006D0DDA /* CatalogListViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B212747DB87006D0DDA /* CatalogListViewModelTest.swift */; };
 		4CAA2B242747DBA8006D0DDA /* Items.json in Resources */ = {isa = PBXBuildFile; fileRef = 4CAA2B232747DBA8006D0DDA /* Items.json */; };
 		4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */; };
+		4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		4CAA2B212747DB87006D0DDA /* CatalogListViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogListViewModelTest.swift; sourceTree = "<group>"; };
 		4CAA2B232747DBA8006D0DDA /* Items.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Items.json; sourceTree = "<group>"; };
 		4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAA2B012747CB23006D0DDA /* Extensions.swift */,
+				4CAA2B2D2747E29B006D0DDA /* Extension+UIColor.swift */,
 				4CAA2B2B2747E230006D0DDA /* UIView+Anchor.swift */,
 			);
 			path = Extensions;
@@ -462,6 +465,7 @@
 				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4CAA2B2C2747E230006D0DDA /* UIView+Anchor.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
+				4CAA2B2E2747E29B006D0DDA /* Extension+UIColor.swift in Sources */,
 				4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */,
 				4CAA2B202747D9DD006D0DDA /* CatalogCellViewModel.swift in Sources */,
 				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
