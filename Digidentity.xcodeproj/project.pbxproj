@@ -21,6 +21,7 @@
 		4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */; };
 		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
 		4CAA2B102747CDBE006D0DDA /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0F2747CDBE006D0DDA /* APIService.swift */; };
+		4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 		4CAA2B0F2747CDBE006D0DDA /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */,
+				4CAA2B112747CE35006D0DDA /* APIServiceTest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B122747CE35006D0DDA /* APIServiceTest.swift in Sources */,
 				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
 				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
 			);
