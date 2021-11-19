@@ -18,6 +18,8 @@
 		4CAA2B042747CB74006D0DDA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B032747CB74006D0DDA /* Router.swift */; };
 		4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */; };
 		4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */; };
+		4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */; };
+		4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		4CAA2B032747CB74006D0DDA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItem.swift; sourceTree = "<group>"; };
 		4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogParams.swift; sourceTree = "<group>"; };
+		4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
+		4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +234,7 @@
 		4C389EAF2747C0BC00F026B3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0B2747CCD5006D0DDA /* RouterTest.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 		4C389EB02747C0C900F026B3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B0D2747CD6A006D0DDA /* TestConstants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -422,6 +428,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B0C2747CCD5006D0DDA /* RouterTest.swift in Sources */,
+				4CAA2B0E2747CD6A006D0DDA /* TestConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
