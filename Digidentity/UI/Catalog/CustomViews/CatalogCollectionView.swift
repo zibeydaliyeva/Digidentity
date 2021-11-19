@@ -38,9 +38,9 @@ class CatalogCollectionView: UIView {
         let collectionView = UICollectionView(
             frame: .zero, collectionViewLayout: flowFlayout)
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.contentInset = UIEdgeInsets(
-            horizontalInset: padding, verticalInset: 20)
-        collectionView.showsVerticalScrollIndicator = true
+            horizontalInset: 0, verticalInset: 0)
         collectionView.clipsToBounds = true
         collectionView.backgroundColor = .clear
         collectionView.refreshControl = refresh
@@ -83,7 +83,11 @@ class CatalogCollectionView: UIView {
     }
     
     private func setConstraints() {
-        collectionView.anchor(.fillSuperview())
+        collectionView.anchor(
+            .top(),
+            .leading(15),
+            .trailing(-15),
+            .bottom())
     }
     
     @objc private func handleRefresh() {

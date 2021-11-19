@@ -23,6 +23,16 @@ class CatalogListViewController: BaseViewController {
         initialLoad()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+    
+    override func viewWillTransition(to size: CGSize,
+        with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        catalogView.reloadData()
+    }
+    
     override func setupUI() {
         super.setupUI()
         navigationItem.title = "Catalog"
@@ -39,6 +49,8 @@ class CatalogListViewController: BaseViewController {
         super.setConstraints()
         catalogView.anchor(.fillSuperview(isSafeArea: true))
     }
+    
+
     
 }
 
