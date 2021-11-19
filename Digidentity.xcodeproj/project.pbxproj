@@ -16,6 +16,8 @@
 		4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2AFF2747CAFB006D0DDA /* Enums.swift */; };
 		4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B012747CB23006D0DDA /* Extensions.swift */; };
 		4CAA2B042747CB74006D0DDA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B032747CB74006D0DDA /* Router.swift */; };
+		4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */; };
+		4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		4CAA2AFF2747CAFB006D0DDA /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		4CAA2B012747CB23006D0DDA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4CAA2B032747CB74006D0DDA /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogItem.swift; sourceTree = "<group>"; };
+		4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		4C389EA42747C01700F026B3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4CAA2B072747CC4B006D0DDA /* CatalogItem.swift */,
+				4CAA2B092747CC5B006D0DDA /* CatalogParams.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 					};
 					4C389E862747BFC800F026B3 = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 						TestTargetID = 4C389E702747BFC700F026B3;
 					};
 					4C389E902747BFC800F026B3 = {
@@ -401,9 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CAA2B082747CC4B006D0DDA /* CatalogItem.swift in Sources */,
 				4CAA2AFE2747CA53006D0DDA /* ErrorService.swift in Sources */,
 				4CAA2B002747CAFB006D0DDA /* Enums.swift in Sources */,
 				4CAA2B042747CB74006D0DDA /* Router.swift in Sources */,
+				4CAA2B0A2747CC5B006D0DDA /* CatalogParams.swift in Sources */,
 				4C389E752747BFC700F026B3 /* AppDelegate.swift in Sources */,
 				4CAA2B022747CB23006D0DDA /* Extensions.swift in Sources */,
 			);
@@ -629,6 +638,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
@@ -643,6 +653,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zibeyda.DigidentityTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Digidentity.app/Digidentity";
@@ -654,6 +665,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JE4QC5797R;
