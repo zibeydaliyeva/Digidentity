@@ -8,10 +8,10 @@
 import Foundation
 
 struct CatalogItem: Codable {
-    var text: String
-    var confidence: Double
-    var image: String
-    var id: String
+    let text: String
+    let confidence: Double
+    let image: String
+    let id: String
     
     enum CodingKeys : String, CodingKey {
         case id = "_id"
