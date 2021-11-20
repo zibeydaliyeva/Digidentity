@@ -50,7 +50,7 @@ class CatalogListViewModel {
         getCatalogs(params: params, completion: completion)
     }
     
-    func getCatalogs(params: CatalogParams, completion: @escaping Response) {
+    private func getCatalogs(params: CatalogParams, completion: @escaping Response) {
         guard !isFetchingData else { return }
         isFetchingData = true
         
@@ -65,16 +65,8 @@ class CatalogListViewModel {
             }
             self.isFetchingData = false
         }
-
     }
     
-    func getCatalog(at index: Int) -> CatalogCellViewModel? {
-        guard catalogCount > index else { return nil }
-        let item = catalogList[index]
-        return CatalogCellViewModel(catalog: item)
-    }
-    
-
     private func handleSuccess(data: [CatalogItem]?, params: CatalogParams) {
         guard let data = data  else { return }
         self.newDataCount = data.count
@@ -85,6 +77,12 @@ class CatalogListViewModel {
             self.catalogList.insert(contentsOf: orderedData, at: 0)
             self.saveInCache()
         }
+    }
+    
+    func getCatalog(at index: Int) -> CatalogCellViewModel? {
+        guard catalogCount > index else { return nil }
+        let item = catalogList[index]
+        return CatalogCellViewModel(catalog: item)
     }
     
     private func saveInCache() {
