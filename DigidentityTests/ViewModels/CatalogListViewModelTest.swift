@@ -23,105 +23,124 @@ class CatalogListViewModelTest: XCTestCase {
         apiService = nil
         try super.tearDownWithError()
     }
-
-    func testGetCatalogs() {
-        let expectation = self.expectation(description: "Get catalogs")
-        let params = CatalogParams()
-        getCatalogsTest(params: params, expectation)
-        XCTAssertEqual(sut.catalogCount > 0, true)
-        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
-    }
-    
-    func testGetCatalogsWithParams() {
-        let expectation = self.expectation(description: "Get get catalogs with params")
-        let params = TestConstants.catalogParamsMaxId
-        getCatalogsTest(params: params, expectation)
-        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
-    }
-    
-    func testGetCatalogsWithSinceIdFromJson() {
-        let expectation = self.expectation(description: "Get get catalogs with params from json")
-        let params = TestConstants.catalogParamsSinceId
-        getCatalogsTest(params: params, expectation)
-        XCTAssertEqual(sut.catalogCount, 1)
-        XCTAssertEqual(sut.newDataCount, 1)
-    }
-    
-    func testGetCatalogsWithMaxIdFromJson() {
-        let expectation = self.expectation(description: "Get catalogs")
-        getCatalogsTest(params: CatalogParams(), expectation)
-        XCTAssertEqual(sut.catalogCount, 10)
-        
-        let expectationParams = self.expectation(description: "Get get catalogs with params from json")
-        let params = TestConstants.catalogParamsMaxId
-        getCatalogsTest(params: params, expectationParams)
-        XCTAssertEqual(sut.newDataCount, 2)
-        XCTAssertEqual(sut.catalogCount, 12)
-    }
     
     func testGetCatalog() {
         let expectation = self.expectation(description: "Get catalog cell view model")
-        self.getCatalogsTest(params: CatalogParams(), expectation)
+        self.initialLoadTest(expectation)
+        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+        }
         let cellViewModel = sut.getCatalog(at: 0)
-        XCTAssertNotNil(cellViewModel)
+        if sut.catalogCount > 0 {
+            XCTAssertNotNil(cellViewModel)
+        }
     }
     
     func testInitialLoad() {
         let expectation = self.expectation(description: "Initial load")
-        sut.initialLoad { error in
-            XCTAssertNil(error)
-            expectation.fulfill()
-        }
-        
-        XCTAssertEqual(sut.catalogCount > 0, true)
-        
+        self.initialLoadTest(expectation)
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
                 XCTFail(error.localizedDescription)
             }
         }
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
+        XCTAssertLessThanOrEqual(sut.catalogCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadNewerCatalog() {
-        let expectation = self.expectation(description: "Load new catalog")
+        let expectation = self.expectation(description: "Load initial catalog")
+        let expectationNewer = self.expectation(description: "Get newer catalog from JSON")
         
-        sut.loadNewerCatalog { error in
-            XCTAssertNil(error)
-            expectation.fulfill()
+        self.initialLoadTest( expectation)
+        self.loadNewerCatalogTest(expectationNewer)
+        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
         }
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
+    }
+    
+    func testLoadNewerCatalogFromJson() {
+        let expectation = self.expectation(description: "Get initial catalogs")
+        let expectationNewer = self.expectation(description: "Get newer catalog from JSON")
+        
+        self.initialLoadTest( expectation)
+        self.loadNewerCatalogTest(expectationNewer)
         
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
                 XCTFail(error.localizedDescription)
             }
         }
+        
+        XCTAssertEqual(sut.newDataCount, 10)
+        XCTAssertEqual(sut.catalogCount, 20)
+        XCTAssertGreaterThan(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadOlderCatalog() {
-        let expectation = self.expectation(description: "Load new catalog")
+        let expectation = self.expectation(description: "Get initial catalogs")
+        let expectationOlder = self.expectation(description: "Load old catalog")
         
+        initialLoadTest(expectation)
+        
+        loadOlderCatalogTest(expectationOlder)
+        
+        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
+    }
+    
+    func testLoadOlderCatalogFromJson() {
+        let expectation = self.expectation(description: "Get initial catalogs")
+        let expectationOlder = self.expectation(description: "Load old catalog from JSON")
+        
+        self.initialLoadTest( expectation)
+        
+        self.loadOlderCatalogTest(expectationOlder)
+        
+        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
+            if let error = error {
+                XCTFail(error.localizedDescription)
+            }
+        }
+        
+        XCTAssertEqual(sut.newDataCount, 2)
+        XCTAssertEqual(sut.catalogCount, 12)
+        XCTAssertGreaterThan(sut.catalogCount, sut.newDataCount)
+    }
+    
+    
+    private func loadOlderCatalogTest(_ expectation: XCTestExpectation) {
         sut.loadOlderCatalog { error in
             XCTAssertNil(error)
             expectation.fulfill()
         }
-        
-        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
-            if let error = error {
-                XCTFail(error.localizedDescription)
-            }
-        }
+
     }
     
-    
-    private func getCatalogsTest(params: CatalogParams, _ expectation: XCTestExpectation) {
-        sut.getCatalogs(params: params) { error in
+    private func loadNewerCatalogTest(_ expectation: XCTestExpectation) {
+        sut.loadNewerCatalog { error in
             XCTAssertNil(error)
             expectation.fulfill()
         }
-        self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
-            if let error = error {
-                XCTFail(error.localizedDescription)
-            }
+    }
+    
+    private func initialLoadTest(_ expectation: XCTestExpectation) {
+        sut.initialLoad{ error in
+            XCTAssertNil(error)
+            expectation.fulfill()
         }
     }
 }
