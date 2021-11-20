@@ -30,7 +30,6 @@ class APIServiceTest: XCTestCase {
             case .success(let data):
                 guard let data = data else { return }
                 XCTAssertNotNil(data)
-                XCTAssertEqual(data.count > 0, true)
                 XCTAssertLessThanOrEqual(data.count, 10)
             case .failure(let error):
                 XCTFail(error.localizedDescription)
@@ -60,8 +59,6 @@ class MockAPIService: APIServiceProtocol {
             if mockData.count > 10 {
                 if params.maxId != nil {
                     mockData = Array(mockData[10..<12])
-                } else if params.sinceId != nil {
-                    mockData = Array(mockData[0..<1])
                 } else {
                     mockData = Array(mockData[0..<10])
                 }

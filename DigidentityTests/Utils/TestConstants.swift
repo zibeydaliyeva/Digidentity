@@ -12,7 +12,7 @@ struct TestConstants {
     
     private init() {}
 
-    static let timeIntervale: TimeInterval = 5
+    static let timeIntervale: TimeInterval = 10
     static let testWithMock = true
     
     static let catalogParamsSinceId = CatalogParams(sinceId: "6196d03650e7f")
