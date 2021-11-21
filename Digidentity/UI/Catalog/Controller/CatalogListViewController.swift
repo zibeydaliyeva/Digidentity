@@ -149,6 +149,7 @@ extension CatalogListViewController {
     }
     
     private func loadOlderCatalog() {
+        guard !viewModel.isLastOldFetch else { return }
         catalogView.animateSpinner(true)
         viewModel.loadOlderCatalog { [weak self] error in
             self?.catalogView.animateSpinner(false)

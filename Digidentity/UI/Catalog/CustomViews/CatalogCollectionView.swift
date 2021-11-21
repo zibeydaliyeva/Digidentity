@@ -13,7 +13,6 @@ class CatalogCollectionView: UIView {
     
     private let padding: CGFloat = 16
     private let space: CGFloat = 15
-    private var contentHeight: CGFloat = 0
     
     private lazy var flowFlayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -149,7 +148,6 @@ extension CatalogCollectionView: UIScrollViewDelegate {
             self.delegate?.scrollViewDidScrollToTop()
         }
         if isLastCell(scrollView) {
-            contentHeight = scrollView.contentSize.height
             self.delegate?.scrollViewDidScrollToBottom()
         }
     }
@@ -161,8 +159,7 @@ extension CatalogCollectionView: UIScrollViewDelegate {
         let maximumOffset = contentSizeHeight - scrollViewHeight
         
         return currentOffset >= 0 &&
-               currentOffset >= maximumOffset &&
-               contentSizeHeight > contentHeight
+               currentOffset >= maximumOffset
     }
 
     private func isTopCell(_ scrollView: UIScrollView) -> Bool {
