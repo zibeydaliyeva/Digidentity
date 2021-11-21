@@ -13,14 +13,16 @@ class CatalogListViewModel {
     
     private var service: APIServiceProtocol!
     
-    private var catalogList: [CatalogItem] = []
-    
-    private var isFetchingData = false
-    
     private lazy var cacher: Cacher = {
         return Cacher(fileName: "cached_catalog")
     }()
     
+    private var catalogList: [CatalogItem] = []
+    
+    private var isFetchingData = false
+    
+    var isLastOldFetch = false
+
     var catalogCount: Int {
         return catalogList.count
     }
@@ -71,6 +73,7 @@ class CatalogListViewModel {
         guard let data = data  else { return }
         self.newDataCount = data.count
         if params.maxId != nil {
+            if data.isEmpty { isLastOldFetch = true }
             self.catalogList.append(contentsOf: data)
         } else {
             let orderedData = data.count < 10 ? data.reversed() :data
