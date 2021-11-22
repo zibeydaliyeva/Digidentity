@@ -11,7 +11,7 @@ class CatalogListViewModel {
     
     typealias Response = (ErrorService?) -> Void
     
-    private var service: APIServiceProtocol!
+    private var service: APIServiceProtocol
     
     private lazy var cacher: Cacher = {
         return Cacher(fileName: "cached_catalog")
@@ -21,7 +21,7 @@ class CatalogListViewModel {
     
     private var isFetchingData = false
     
-    var isLastOldFetch = false
+    private(set) var isLastOldFetch = false
 
     var catalogCount: Int {
         return catalogList.count
