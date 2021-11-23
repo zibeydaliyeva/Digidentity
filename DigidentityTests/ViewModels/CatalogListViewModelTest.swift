@@ -46,26 +46,24 @@ class CatalogListViewModelTest: XCTestCase {
                 XCTFail(error.localizedDescription)
             }
         }
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
         XCTAssertLessThanOrEqual(sut.catalogCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadNewerCatalog() {
         let expectation = self.expectation(description: "Load initial catalog")
-        let expectationNewer = self.expectation(description: "Get newer catalog")
+        let expectationNewer = self.expectation(description: "Get newer catalog from JSON")
         
         self.initialLoadTest( expectation)
-        let initialCount = sut.catalogCount
-        
         self.loadNewerCatalogTest(expectationNewer)
-        let newDataCount = sut.catalogCount - initialCount
-        
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
                 XCTFail(error.localizedDescription)
             }
         }
-        XCTAssertLessThanOrEqual(newDataCount, 10)
-        XCTAssertGreaterThanOrEqual(sut.catalogCount, newDataCount)
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadNewerCatalogFromJson() {
@@ -73,10 +71,7 @@ class CatalogListViewModelTest: XCTestCase {
         let expectationNewer = self.expectation(description: "Get newer catalog from JSON")
         
         self.initialLoadTest( expectation)
-        let initialCount = sut.catalogCount
-        
         self.loadNewerCatalogTest(expectationNewer)
-        let newDataCount = sut.catalogCount - initialCount
         
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
@@ -84,9 +79,9 @@ class CatalogListViewModelTest: XCTestCase {
             }
         }
         
-        XCTAssertEqual(newDataCount, 10)
+        XCTAssertEqual(sut.newDataCount, 10)
         XCTAssertEqual(sut.catalogCount, 20)
-        XCTAssertGreaterThan(sut.catalogCount, newDataCount)
+        XCTAssertGreaterThan(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadOlderCatalog() {
@@ -94,10 +89,8 @@ class CatalogListViewModelTest: XCTestCase {
         let expectationOlder = self.expectation(description: "Load old catalog")
         
         initialLoadTest(expectation)
-        let initialCount = sut.catalogCount
         
         loadOlderCatalogTest(expectationOlder)
-        let newDataCount = sut.catalogCount - initialCount
         
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
@@ -105,8 +98,8 @@ class CatalogListViewModelTest: XCTestCase {
             }
         }
         
-        XCTAssertLessThanOrEqual(newDataCount, 10)
-        XCTAssertGreaterThanOrEqual(sut.catalogCount, newDataCount)
+        XCTAssertLessThanOrEqual(sut.newDataCount, 10)
+        XCTAssertGreaterThanOrEqual(sut.catalogCount, sut.newDataCount)
     }
     
     func testLoadOlderCatalogFromJson() {
@@ -114,10 +107,8 @@ class CatalogListViewModelTest: XCTestCase {
         let expectationOlder = self.expectation(description: "Load old catalog from JSON")
         
         self.initialLoadTest( expectation)
-        let initialCount = sut.catalogCount
         
         self.loadOlderCatalogTest(expectationOlder)
-        let newDataCount = sut.catalogCount - initialCount
         
         self.waitForExpectations(timeout: TestConstants.timeIntervale) { error in
             if let error = error {
@@ -125,9 +116,9 @@ class CatalogListViewModelTest: XCTestCase {
             }
         }
         
-        XCTAssertEqual(newDataCount, 2)
+        XCTAssertEqual(sut.newDataCount, 2)
         XCTAssertEqual(sut.catalogCount, 12)
-        XCTAssertGreaterThan(sut.catalogCount, newDataCount)
+        XCTAssertGreaterThan(sut.catalogCount, sut.newDataCount)
     }
     
     
