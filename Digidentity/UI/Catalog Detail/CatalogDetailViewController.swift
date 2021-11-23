@@ -43,15 +43,14 @@ class CatalogDetailViewController: BaseViewController {
     
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [
+            self.imageView,
             self.nameLabel,
             self.idLabel,
             self.confidenceLabel])
         stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
         stackView.spacing = 5
         return stackView
     }()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,7 +63,6 @@ class CatalogDetailViewController: BaseViewController {
     
     override func addSubviews() {
         super.addSubviews()
-        view.addSubview(imageView)
         view.addSubview(stackView)
     }
     
@@ -72,13 +70,10 @@ class CatalogDetailViewController: BaseViewController {
         super.setConstraints()
         
         imageView.anchor(
-            .top(view.safeAreaTopAnchor),
-            .leading(),
-            .trailing(),
             .height(200))
         
         stackView.anchor(
-            .top(imageView.bottomAnchor, constant: 5),
+            .top(view.safeAreaTopAnchor, constant: 5),
             .leading(25),
             .trailing(-25))
     }
