@@ -135,6 +135,7 @@ extension CatalogListViewController {
     }
     
     private func loadNewerCatalog() {
+        let itemsCount = self.viewModel.catalogCount
         self.viewModel.loadNewerCatalog { [weak self] error in
             guard let self = self else { return }
             self.catalogView.endRefreshing()
@@ -142,8 +143,8 @@ extension CatalogListViewController {
                 self.errorHandler(error)
             } else {
                 self.catalogView.reloadData()
-                let item = self.viewModel.newDataCount - 1
-                self.catalogView.scrollToItem(at: item)
+                let newItemsCount = self.viewModel.catalogCount - itemsCount
+                self.catalogView.scrollToItem(at: newItemsCount - 1)
             }
         }
     }
