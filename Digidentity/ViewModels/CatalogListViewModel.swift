@@ -27,8 +27,6 @@ class CatalogListViewModel {
         return catalogList.count
     }
     
-    var newDataCount: Int = 0
-    
     init(_ service: APIServiceProtocol = APIService()) {
         self.service = service
     }
@@ -71,7 +69,6 @@ class CatalogListViewModel {
     
     private func handleSuccess(data: [CatalogItem]?, params: CatalogParams) {
         guard let data = data  else { return }
-        self.newDataCount = data.count
         if params.maxId != nil {
             if data.isEmpty { isLastOldFetch = true }
             self.catalogList.append(contentsOf: data)
