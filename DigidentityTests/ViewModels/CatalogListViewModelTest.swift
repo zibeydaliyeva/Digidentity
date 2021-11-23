@@ -35,8 +35,6 @@ class CatalogListViewModelTest: XCTestCase {
         let cellViewModel = sut.getCatalog(at: 0)
         if sut.catalogCount > 0 {
             XCTAssertNotNil(cellViewModel)
-        } else {
-            XCTAssertNil(cellViewModel)
         }
     }
     
