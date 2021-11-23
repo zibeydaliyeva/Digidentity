@@ -89,7 +89,8 @@ class CatalogListViewModel {
     }
     
     private func saveInCache() {
-        let items = catalogList[0..<newDataCount]
+        let lastIndex = catalogCount >= 10 ? 10: catalogCount
+        let items = catalogList[0..<lastIndex]
         cacher.persist(items: Array(items))
     }
     
