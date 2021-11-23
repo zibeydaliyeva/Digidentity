@@ -35,6 +35,8 @@ class CatalogListViewModelTest: XCTestCase {
         let cellViewModel = sut.getCatalog(at: 0)
         if sut.catalogCount > 0 {
             XCTAssertNotNil(cellViewModel)
+        } else {
+            XCTAssertNil(cellViewModel)
         }
     }
     
@@ -53,7 +55,7 @@ class CatalogListViewModelTest: XCTestCase {
     
     func testLoadNewerCatalog() {
         let expectation = self.expectation(description: "Load initial catalog")
-        let expectationNewer = self.expectation(description: "Get newer catalog from JSON")
+        let expectationNewer = self.expectation(description: "Get newer catalog")
         
         self.initialLoadTest( expectation)
         self.loadNewerCatalogTest(expectationNewer)
